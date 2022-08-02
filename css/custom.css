@@ -1,0 +1,136 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .big_img {
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 100vh;
+        background-size: 100% 100%;
+    }
+
+    .pr_desc {
+        padding: 96px 120px 0 106px;
+    }
+
+    .pr_desc h1 {
+        font-size: 31.25px;
+        line-height: 130%;
+        font-weight: 700;
+    }
+
+    .pr_desc p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #666666;
+        margin: 12px 0 32px 0;
+    }
+
+    .pr_desc a {
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 12.8px;
+        line-height: 17px;
+        color: #000000 !important;
+        border-bottom: 1px solid;
+        border-radius: 0;
+        padding-left: 0;
+    }
+
+    .other_products {
+        padding: 68px 0 0 106px;
+    }
+
+    .colors_list li {
+        height: 12px;
+        width: 12px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    .colors_list li.active {
+        border: 1px solid #000000;
+    }
+
+    .pr_box h5 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12.8px;
+        line-height: 160%;
+        margin-top: 12px;
+    }
+
+    .pr_box p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.8px;
+        line-height: 160%;
+    }
+
+    .pr_box p a {
+        color: #000000;
+        text-decoration: unset;
+    }
+
+    .owl-dot {display: none !important;}
+
+    .owl-nav {
+        position: absolute;
+        top: 33%;
+        width: 100%;
+    }
+
+    .owl-next {
+        float: right;
+        width: 40px;
+        height: 40px;
+        border: 1px solid !important;
+        border-radius: 0 !important;
+        margin-right: 50px !important;
+    }
+
+    .owl-prev {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border: 1px solid !important;
+        border-radius: 0 !important;
+    }
+    
+    /* Mobile */
+    @media (max-width: 767px) {
+
+        .big_img {height: 437px;}
+
+        .pr_desc {
+            padding: 0 24px;
+            margin-top: -220px;
+        }
+
+        .pr_desc h1 {
+            font-size: 20px;
+            line-height: 130%;
+            color: #ffffff;
+        }
+
+        .mb_overlay {
+            top: 218px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 78.65%);
+            opacity: 0.5;
+        }
+
+        #left_side {z-index: 0;}
+        #right_side {z-index: 1;}
+        .pr_desc p {display: none;}
+        .pr_desc a {color: #ffffff !important;}
+
+        .other_products {
+            padding: 68px 0 0 24px;
+        }
+
+    }
